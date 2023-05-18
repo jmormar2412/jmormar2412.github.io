@@ -1,0 +1,49 @@
+#checkbutton {
+    margin-top: 25px;
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(../fotos/seamlessback.jpg);
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: 700px;
+    margin: 1%;
+    background-color: bisque;
+    box-shadow: 5px 5px 5px black;
+}
+
+article h2{
+    margin: 10px 0 10px 0;
+}
+
+article p{
+    margin: 7px 20px 7px 20px;
+}
+
+footer{
+    display: flex;
+}
+
+.imagenesSeguidas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagenesSeguidas img{
+    width: 200px; /* Set a fixed width for each image */
+    height: 200px; /* Set a fixed height for each image */
+    object-fit: cover; /* Maintain aspect ratio and fill the available space */
+    margin: 10px;
+}

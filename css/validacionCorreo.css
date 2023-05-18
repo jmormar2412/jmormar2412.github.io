@@ -1,0 +1,13 @@
+#nombreUser:focus:invalid, #correo:focus:invalid {
+    background-image: url(../fotos/rojo.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+}
+
+#nombreUser:focus:valid, #correo:focus:valid {
+    background-image: url(../fotos/verde.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+}

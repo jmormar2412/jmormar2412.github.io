@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/logreg.css">
+    <link rel="stylesheet" href="../css/validacionCorreo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="../js/comprobarContraseña.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" id="checkbutton">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="../index.html">
+                <img src="../fotos/logo.png" alt="Logo" id="logo">
+            </a>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../blog/blogpage.html">Blog</a></li>
+                <li><a href="https://www.youtube.com/watch?v=6Tnw5GiRLfk" target="_blank">Reciente</a></li>
+                <li><a href="../about.html">Acerca de</a>
+                    <ul class="submenu">
+                        <li><a href="../contact.html">Contacto</a></li>
+                        <li><a href="../DMCA.html">DMCA</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+        <section></section>
+    </header>
+    <main>
+        <form>
+            <h1>Registro</h1>
+            <input type="text" id="nombreUser" placeholder="Nombre de usuario" pattern="^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" required>
+            <input type="email" id="correo" placeholder="Correo electrónico" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+            <input type="password" id="pass" placeholder="Contraseña" required>
+            <div id="medidas">
+                <span class="indicator" data-indicator="length" id="m1">8 caracteres</span>
+                <span class="indicator" data-indicator="number" id="m2">1 número</span>
+                <span class="indicator" data-indicator="uppercase" id="m3">1 mayúscula</span>
+                <span class="indicator" data-indicator="special" id="m4">1 carácter especial</span>
+            </div>
+            <input type="password" id="passRep" placeholder="Confirmar contraseña" required>
+            <section>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">Acepto los <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">términos y condiciones de servicio</a>.</label>
+            </section>
+            <input type="submit" value="Entrar" id="sub" onclick="comprobarCosas();return false">
+            <p>Si ya estás registrado, inicia sesión <a href="login.html">aquí</a>.</p>
+            <p>Si no sabe los caracteres especiales, mire la <a href="#" onclick="politicaContraseña();return false">política de contraseñas</a></p>
+        </form>
+    </main>
+</body>
+</html>
+</body>
+</html>

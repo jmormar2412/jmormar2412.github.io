@@ -1,0 +1,134 @@
+/*LAYOUT ---------------------------------------------------------*/
+
+#checkbutton {
+    margin-top: 25px;
+}
+
+/*display/position/float -------------------*/
+#arts article, footer{
+    display: flex;
+}
+/*height/width/padding/border/margin -------*/
+
+#appearingtext{
+    padding: 20px 0 20px 0;
+}
+
+main img{
+    width: 100%;   
+}
+
+#arts{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#arts article{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: 700px;
+    margin: 1%;
+}
+
+#arts article h2{
+    margin: 10px 0 10px 0;
+}
+
+#arts article h2 a{
+    color: rgb(71, 71, 158);
+}
+
+#arts article p{
+    margin: 0 20px 0 20px;
+}
+
+footer{
+    padding-bottom: 20px;
+}
+
+footer img{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*MAIN -------------------------------------*/
+/*Las fotos*/
+
+#images-wrapper {
+    background-image: url(../fotos/seamlessback.jpg);
+    line-height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
+}
+
+#images-wrapper img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+#images-wrapper {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 1000px) {
+    #images-wrapper {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    #images-wrapper {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    #images-wrapper {
+        column-count: 1;
+    }
+}
+
+
+/*Fin*/
+
+main h1{
+    font-size: 50px;
+    animation: changecolour 3s forwards;
+}
+
+@keyframes changecolour {
+    0%{
+        color: black;
+    }
+    100%{
+        color: rgb(94, 94, 255);
+    }
+}
+
+#appearingtext{
+    background:linear-gradient(to bottom, rgb(122, 179, 37), white);
+    text-align: center;
+}
+
+#arts{
+    background-image: url(../fotos/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#arts article{
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
