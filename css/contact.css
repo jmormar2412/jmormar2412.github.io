@@ -17,6 +17,7 @@ main h1 {
     animation: changecolour 3s forwards;
 }
 
+/*Animación para el cambio de color del h1*/
 @keyframes changecolour {
     0% {
         color: black;

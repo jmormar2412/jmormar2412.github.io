@@ -23,6 +23,8 @@ footer img{
     padding-bottom: 10px;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 1000px) {
     h1{
         font-size: 300%;

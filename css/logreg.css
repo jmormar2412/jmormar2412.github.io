@@ -88,6 +88,7 @@ span{
     font-weight: bold;
 }
 
+/* MEDIA QUERY */
 @media (max-width: 1123px) {
     label{
         font-size: 14px;

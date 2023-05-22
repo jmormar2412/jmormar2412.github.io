@@ -42,8 +42,8 @@ footer{
 }
 
 .imagenesSeguidas img{
-    width: 200px; /* Set a fixed width for each image */
-    height: 200px; /* Set a fixed height for each image */
-    object-fit: cover; /* Maintain aspect ratio and fill the available space */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     margin: 10px;
 }

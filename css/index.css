@@ -80,25 +80,6 @@ footer img{
     margin-left: auto;
 }
 
-@media (max-width: 1000px) {
-    #images-wrapper {
-        column-count: 3;
-    }
-}
-
-@media (max-width: 800px) {
-    #images-wrapper {
-        column-count: 2;
-    }
-}
-
-@media (max-width: 400px) {
-    #images-wrapper {
-        column-count: 1;
-    }
-}
-
-
 /*Fin*/
 
 main h1{
@@ -106,6 +87,7 @@ main h1{
     animation: changecolour 3s forwards;
 }
 
+/*Animación para h1*/
 @keyframes changecolour {
     0%{
         color: black;
@@ -131,4 +113,24 @@ main h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/* MEDIA QUERIES PARA EL WRAPPER DE IMÁGENES */
+
+@media (max-width: 1000px) {
+    #images-wrapper {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    #images-wrapper {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    #images-wrapper {
+        column-count: 1;
+    }
 }
