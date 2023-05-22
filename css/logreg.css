@@ -47,9 +47,10 @@ p{
     margin-bottom: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: #000066;
+main a{
+    text-decoration: underline;
+    color: #0000A0;
+    
 }
 
 form section{
