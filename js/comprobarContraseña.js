@@ -45,21 +45,21 @@ function comprobarCosas() {
     if (name == "" || correo == "" || pass == "" || passRep == "") {
         Swal.fire({
             icon: 'error',
-            title: 'Erroooor...',
+            title: 'Error',
             text: 'Habrás dejado algún campo en blanco'
         })
     }
     else if (pass != passRep) {
         Swal.fire({
             icon: 'error',
-            title: 'Erraaso...',
+            title: 'Error',
             text: 'Las contraseñas no coinciden'
         })
     }
     else if (!terms) {
         Swal.fire({
             icon: 'error',
-            title: 'Errorsitooo...',
+            title: 'Error',
             text: 'Acepta los términos del servicio'
         })
     }
@@ -73,7 +73,7 @@ function comprobarCosas() {
 
         Swal.fire({
             icon: 'success',
-            title: 'Pefe',
+            title: 'Perfecto',
             text: 'el objeto será ' + JSON.stringify(obj)
         })
     }
